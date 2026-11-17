@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novitá — Links</title>
+  <meta name="description" content="Todos os links da Novitá: catálogo, WhatsApp, Instagram e localização.">
+  <meta name="theme-color" content="#221E1B">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="public/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script type="module">
+    import { initStoreBindings } from './src/scripts/ui/store-bindings.js';
+    initStoreBindings();
+  </script>
+</head>
+<!--
+  Página "link na bio" própria. Use https://lojanovita.com/links.html na bio do
+  Instagram em vez de um serviço externo: mesma marca, mesmas métricas, zero custo.
+-->
+<body class="links-page">
+  <main class="links">
+    <header class="links__head">
+      <div class="links__avatar" aria-hidden="true">N</div>
+      <h1 class="logo logo--light">Novit<span class="logo__accent">á</span></h1>
+      <p>Sempre algo novo. Moda &amp; acessórios com curadoria.</p>
+    </header>
+
+    <ul class="links__list">
+      <li><a class="links__item links__item--primary" href="index.html#catalogo">Ver as novidades da semana <span aria-hidden="true">→</span></a></li>
+      <li><a class="links__item" data-wa="Olá Novitá! Vim pelo Instagram e gostaria de fazer uma encomenda.">Encomendar pelo WhatsApp <span aria-hidden="true">→</span></a></li>
+      <li><a class="links__item" data-wa="Olá Novitá! Quero entrar no Clube Novitá.">Entrar no Clube Novitá (VIP) <span aria-hidden="true">→</span></a></li>
+      <li><a class="links__item" data-store-href="maps">Como chegar à loja <span aria-hidden="true">→</span></a></li>
+      <li><a class="links__item" href="index.html#faq">Envios, trocas e pagamentos <span aria-hidden="true">→</span></a></li>
+      <li><a class="links__item" data-store-href="instagram">Instagram @lojanovita <span aria-hidden="true">→</span></a></li>
+    </ul>
+
+    <footer class="links__foot">
+      <p data-store="address">Rua da Novidade, 10, 1000-000 Lisboa</p>
+      <p>© <span data-store="year">2026</span> Novitá</p>
+    </footer>
+  </main>
+</body>
+</html>

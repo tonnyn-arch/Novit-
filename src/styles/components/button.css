@@ -1,0 +1,148 @@
+/* Botões, chips, links e ícones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  min-height: 46px;
+  padding: 0 var(--s-5);
+  border: 1px solid transparent;
+  border-radius: var(--r-pill);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background var(--t-fast) var(--ease), color var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.btn:active { transform: scale(0.98); }
+.btn--lg { min-height: 54px; padding: 0 var(--s-6); font-size: var(--fs-base); }
+.btn--block { width: 100%; }
+
+.btn--primary { background: var(--fg); color: var(--c-white); }
+.btn--primary:hover { background: var(--accent); }
+
+.btn--ghost { border-color: currentColor; color: var(--fg); }
+.btn--ghost:hover { background: var(--fg); color: var(--c-white); border-color: var(--fg); }
+
+.btn[aria-disabled='true'] { opacity: 0.4; pointer-events: none; }
+
+.link {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.link:hover { color: var(--accent); }
+
+.link-btn {
+  font-size: var(--fs-xs);
+  color: var(--fg-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.link-btn:hover { color: var(--accent); }
+
+.icon-btn {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background var(--t-fast);
+}
+.icon-btn:hover { background: rgb(34 30 27 / 0.06); }
+.icon-btn svg {
+  width: 22px; height: 22px;
+  fill: none; stroke: currentColor; stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.icon-btn__badge {
+  position: absolute;
+  top: 4px; right: 2px;
+  min-width: 18px; height: 18px;
+  padding: 0 5px;
+  border-radius: var(--r-pill);
+  background: var(--accent);
+  color: var(--c-white);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.chip {
+  padding: var(--s-2) var(--s-4);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--c-white);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  transition: all var(--t-fast) var(--ease);
+}
+.chip:hover { border-color: var(--fg); }
+.chip[aria-pressed='true'] { background: var(--fg); border-color: var(--fg); color: var(--c-white); }
+
+.select select {
+  appearance: none;
+  padding: var(--s-2) var(--s-7) var(--s-2) var(--s-4);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--c-white)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23221e1b' stroke-width='1.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")
+    no-repeat right 14px center / 16px;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: var(--s-3); left: var(--s-3);
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.badge--ink { background: var(--c-white); color: var(--fg); }
+.badge--accent { background: var(--accent); color: var(--c-white); }
+
+.toast {
+  position: fixed;
+  left: 50%; bottom: var(--s-6);
+  z-index: calc(var(--z-overlay) + 10);
+  padding: var(--s-3) var(--s-5);
+  border-radius: var(--r-pill);
+  background: var(--fg);
+  color: var(--c-white);
+  font-size: var(--fs-sm);
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  transform: translate(-50%, 16px);
+  pointer-events: none;
+  transition: opacity var(--t-base) var(--ease), transform var(--t-base) var(--ease);
+}
+.toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
+
+.wa-float {
+  position: fixed;
+  right: var(--s-5); bottom: var(--s-5);
+  z-index: var(--z-float);
+  display: grid; place-items: center;
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: var(--c-white);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--t-base) var(--ease);
+}
+.wa-float:hover { transform: scale(1.06) rotate(-4deg); }
+.wa-float svg {
+  width: 28px; height: 28px;
+  fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round;
+}

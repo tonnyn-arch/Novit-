@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novitá — Sempre algo novo | Moda e acessórios</title>
+  <meta name="description" content="Novitá: moda e acessórios com curadoria. Peças novas todas as semanas, encomendas fáceis pelo WhatsApp e envio rápido.">
+  <meta name="theme-color" content="#F6F1EA">
+  <link rel="canonical" href="https://lojanovita.com/">
+  <link rel="icon" href="public/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / partilha em redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Novitá">
+  <meta property="og:title" content="Novitá — Sempre algo novo">
+  <meta property="og:description" content="Moda e acessórios com curadoria. Novidades todas as semanas.">
+  <meta property="og:image" content="public/img/og-cover.svg">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="src/styles/main.css">
+
+  <!-- Dados estruturados para o Google (negócio local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Novitá",
+    "slogan": "Sempre algo novo.",
+    "url": "https://lojanovita.com/",
+    "image": "https://lojanovita.com/public/img/og-cover.svg",
+    "sameAs": ["https://www.instagram.com/lojanovita"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Lisboa", "addressCountry": "PT" }
+  }
+  </script>
+  <script type="module" src="src/scripts/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- ===== Barra de anúncio ===== -->
+  <div class="announce">
+    <p>Portes grátis a partir de <span data-store="freeShipping">60 €</span> <span class="announce__sep" aria-hidden="true">·</span> <span class="announce__extra">Novidades todas as semanas</span></p>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <button class="header__burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+
+      <a href="#" class="logo" aria-label="Novitá — início">Novit<span class="logo__accent">á</span></a>
+
+      <nav class="nav" id="menu" data-menu aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#catalogo">Novidades</a></li>
+          <li><a href="#colecoes">Coleções</a></li>
+          <li><a href="#como-comprar">Como comprar</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#visite">Visite-nos</a></li>
+        </ul>
+        <a class="nav__cta btn btn--primary" data-wa="Olá Novitá! Gostaria de saber mais sobre as novidades.">Falar connosco</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="icon-btn" data-store-href="instagram" aria-label="Instagram da Novitá">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+        </a>
+        <button class="icon-btn" type="button" data-cart-open aria-label="Abrir saco de compras">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="icon-btn__badge" data-cart-count hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal>Nova coleção · Outono/Inverno</p>
+          <h1 class="hero__title" id="hero-title" data-reveal>
+            O novo,<br><em>todas as semanas.</em>
+          </h1>
+          <p class="hero__lead" data-reveal>
+            Peças escolhidas uma a uma para quem gosta de se sentir bem e diferente.
+            Veja, escolha e encomende em minutos pelo WhatsApp.
+          </p>
+          <div class="hero__ctas" data-reveal>
+            <a href="#catalogo" class="btn btn--primary btn--lg">Ver novidades</a>
+            <a class="btn btn--ghost btn--lg" data-wa="Olá Novitá! Vi o vosso site e gostaria de ajuda a escolher uma peça.">
+              Pedir ajuda a escolher
+            </a>
+          </div>
+          <ul class="hero__proof" data-reveal>
+            <li><strong>Novidades</strong><span>todas as semanas</span></li>
+            <li><strong>Envio</strong><span data-store="deliveryDays">2 a 4 dias úteis</span></li>
+            <li><strong>Trocas</strong><span>até 14 dias</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="hero__panel hero__panel--a"><span>N</span></div>
+          <div class="hero__panel hero__panel--b"></div>
+          <div class="hero__panel hero__panel--c"></div>
+          <div class="hero__stamp">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="circle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+              <text><textPath href="#circle">SEMPRE ALGO NOVO · NOVITÁ · SEMPRE ALGO NOVO · </textPath></text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Faixa animada ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Novidades semanais</span><span>✦</span><span>Curadoria pessoal</span><span>✦</span>
+        <span>Encomendas por WhatsApp</span><span>✦</span><span>Trocas fáceis</span><span>✦</span>
+        <span>Novidades semanais</span><span>✦</span><span>Curadoria pessoal</span><span>✦</span>
+        <span>Encomendas por WhatsApp</span><span>✦</span><span>Trocas fáceis</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- ===== Coleções ===== -->
+    <section class="section" id="colecoes" aria-labelledby="colecoes-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Coleções</p>
+          <h2 class="section__title" id="colecoes-title">Encontre o seu <em>estilo</em></h2>
+        </header>
+        <ul class="collections">
+          <li class="collection collection--tall" data-reveal>
+            <a href="#catalogo" data-filter-link="vestidos">
+              <div class="collection__art" style="--tone:#C27A5A"></div>
+              <div class="collection__label"><h3>Vestidos</h3><span>Explorar →</span></div>
+            </a>
+          </li>
+          <li class="collection" data-reveal>
+            <a href="#catalogo" data-filter-link="tops">
+              <div class="collection__art" style="--tone:#D9C7B0"></div>
+              <div class="collection__label"><h3>Tops &amp; Blusas</h3><span>Explorar →</span></div>
+            </a>
+          </li>
+          <li class="collection" data-reveal>
+            <a href="#catalogo" data-filter-link="acessorios">
+              <div class="collection__art" style="--tone:#8A8B67"></div>
+              <div class="collection__label"><h3>Acessórios</h3><span>Explorar →</span></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Catálogo ===== -->
+    <section class="section section--alt" id="catalogo" data-catalog aria-labelledby="catalogo-title">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Acabadas de chegar</p>
+            <h2 class="section__title" id="catalogo-title">Novidades da <em>semana</em></h2>
+          </div>
+          <p class="catalog__count" data-catalog-count aria-live="polite"></p>
+        </header>
+
+        <div class="catalog__toolbar">
+          <div class="chips" data-catalog-filters role="group" aria-label="Filtrar por categoria"></div>
+          <label class="select">
+            <span class="sr-only">Ordenar</span>
+            <select data-catalog-sort>
+              <option value="featured">Em destaque</option>
+              <option value="price-asc">Preço: mais baixo</option>
+              <option value="price-desc">Preço: mais alto</option>
+            </select>
+          </label>
+        </div>
+
+        <ul class="product-grid" data-catalog-grid></ul>
+
+        <p class="catalog__more">
+          Não encontra o que procura? Temos muito mais na loja e no Instagram.
+          <a data-store-href="instagram" class="link">Ver @lojanovita</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Como comprar ===== -->
+    <section class="section" id="como-comprar" aria-labelledby="como-title">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="eyebrow">Simples assim</p>
+          <h2 class="section__title" id="como-title">Como <em>comprar</em></h2>
+        </header>
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <span class="step__num">01</span>
+            <h3>Escolha</h3>
+            <p>Junte as peças que mais gosta ao saco, com o tamanho certo.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">02</span>
+            <h3>Envie pelo WhatsApp</h3>
+            <p>A encomenda segue já escrita. Confirmamos a disponibilidade e o pagamento consigo.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">03</span>
+            <h3>Receba ou levante</h3>
+            <p>Enviamos em <span data-store="deliveryDays">2 a 4 dias úteis</span>, ou pode levantar na loja.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Manifesto / Sobre ===== -->
+    <section class="manifesto" id="sobre" aria-labelledby="sobre-title">
+      <div class="container manifesto__grid">
+        <p class="manifesto__word" aria-hidden="true">novità</p>
+        <div class="manifesto__copy" data-reveal>
+          <p class="eyebrow eyebrow--light">A nossa história</p>
+          <h2 class="manifesto__title" id="sobre-title">Novità quer dizer <em>novidade</em>.</h2>
+          <p>
+            E é esse o nosso compromisso: há sempre algo novo à sua espera. Escolhemos cada peça
+            a pensar em pessoas reais, com vidas cheias, que querem vestir-se bem sem complicar.
+          </p>
+          <p>
+            Não somos uma loja de prateleiras infinitas. Somos uma seleção curta e pensada, com
+            atendimento próximo, de pessoa para pessoa.
+          </p>
+          <ul class="values">
+            <li><strong>Curadoria</strong> Poucas peças, bem escolhidas.</li>
+            <li><strong>Proximidade</strong> Atendimento real, por mensagem ou na loja.</li>
+            <li><strong>Renovação</strong> Novidades todas as semanas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Instagram ===== -->
+    <section class="section" aria-labelledby="insta-title">
+      <div class="container insta">
+        <div class="insta__copy" data-reveal>
+          <p class="eyebrow">Comunidade</p>
+          <h2 class="section__title" id="insta-title">Siga <em>@lojanovita</em></h2>
+          <p>Looks, provas em direto e as novidades antes de toda a gente. Partilhe o seu look com <strong>#usonovita</strong>.</p>
+          <a class="btn btn--primary" data-store-href="instagram">Seguir no Instagram</a>
+        </div>
+        <ul class="insta__grid" aria-hidden="true">
+          <li style="--tone:#D9C7B0"></li><li style="--tone:#3A3532"></li><li style="--tone:#C27A5A"></li>
+          <li style="--tone:#8A8B67"></li><li style="--tone:#EDE4D6"></li><li style="--tone:#A66B3F"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Clube Novitá ===== -->
+    <section class="club" aria-labelledby="club-title">
+      <div class="container club__inner" data-reveal>
+        <div>
+          <p class="eyebrow">Clube Novitá</p>
+          <h2 class="club__title" id="club-title">Saiba tudo em primeira mão.</h2>
+          <p>Entre na nossa lista VIP do WhatsApp: novidades em primeira mão, reservas antecipadas e ofertas só para membros.</p>
+        </div>
+        <a class="btn btn--primary btn--lg" data-wa="Olá Novitá! Quero entrar no Clube Novitá e receber as novidades em primeira mão.">
+          Entrar no Clube
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq">
+        <header class="section__head">
+          <p class="eyebrow">Dúvidas</p>
+          <h2 class="section__title" id="faq-title">Perguntas <em>frequentes</em></h2>
+        </header>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Como faço uma encomenda?</summary>
+            <p>Junte as peças ao saco e clique em "Finalizar no WhatsApp". A mensagem segue já preenchida; só tem de a enviar e nós tratamos do resto.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Quais são as formas de pagamento?</summary>
+            <p>Confirmamos consigo na conversa. Aceitamos MB WAY, transferência bancária e pagamento na loja.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Quanto custam os portes e quanto tempo demora?</summary>
+            <p>Os portes são grátis a partir de <span data-store="freeShipping">60 €</span>. A entrega demora <span data-store="deliveryDays">2 a 4 dias úteis</span>.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Posso trocar uma peça?</summary>
+            <p>Sim. Tem 14 dias para trocar, desde que a peça esteja em perfeito estado e com etiqueta.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Como sei qual é o meu tamanho?</summary>
+            <p>Envie-nos uma mensagem com a sua altura e o tamanho que costuma usar. Ajudamos a escolher, peça a peça.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Visite-nos ===== -->
+    <section class="section section--alt" id="visite" aria-labelledby="visite-title">
+      <div class="container visit">
+        <div class="visit__copy" data-reveal>
+          <p class="eyebrow">Loja física</p>
+          <h2 class="section__title" id="visite-title">Venha <em>visitar-nos</em></h2>
+          <address class="visit__address">
+            <span data-store="address">Rua da Novidade, 10, 1000-000 Lisboa</span>
+          </address>
+          <dl class="hours" data-store-hours></dl>
+          <div class="visit__ctas">
+            <a class="btn btn--primary" data-store-href="maps">Como chegar</a>
+            <a class="btn btn--ghost" data-wa="Olá Novitá! Gostaria de marcar uma visita à loja.">Marcar visita</a>
+          </div>
+        </div>
+        <a class="visit__map" data-store-href="maps" aria-label="Abrir localização no Google Maps">
+          <span class="visit__pin" aria-hidden="true"></span>
+          <span class="visit__map-label">Abrir no mapa ↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--light">Novit<span class="logo__accent">á</span></a>
+        <p>Sempre algo novo.</p>
+      </div>
+      <nav aria-label="Loja">
+        <h3 class="footer__title">Loja</h3>
+        <ul>
+          <li><a href="#catalogo">Novidades</a></li>
+          <li><a href="#colecoes">Coleções</a></li>
+          <li><a href="#como-comprar">Como comprar</a></li>
+          <li><a href="#faq">Perguntas frequentes</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3 class="footer__title">Contactos</h3>
+        <ul>
+          <li><a data-wa="Olá Novitá!">WhatsApp</a></li>
+          <li><a data-store-href="email"><span data-store="email">ola@lojanovita.com</span></a></li>
+          <li><a data-store-href="instagram">Instagram</a></li>
+          <li><a href="links.html">Todos os links</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Visite-nos</h3>
+        <p data-store="address">Rua da Novidade, 10, 1000-000 Lisboa</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-store="year">2026</span> Novitá. Todos os direitos reservados.</p>
+      <p><a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener">Livro de Reclamações</a></p>
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp flutuante ===== -->
+  <a class="wa-float" data-wa="Olá Novitá! Tenho uma dúvida." aria-label="Falar connosco no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 9.2c.3 2.6 3.7 6 6.3 6.3l1.2-1.4-1.9-1-1 .7c-.9-.4-2-1.5-2.4-2.4l.7-1-1-1.9-1.4 1.2Z" fill="currentColor" stroke="none"/></svg>
+  </a>
+
+  <!-- ===== Saco de compras (drawer) ===== -->
+  <div class="cart" data-cart hidden>
+    <aside class="cart__panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <header class="cart__head">
+        <h2 id="cart-title">O seu saco</h2>
+        <button type="button" class="icon-btn" data-cart-close aria-label="Fechar saco">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="cart__shipping">
+        <p data-cart-shipping></p>
+        <div class="cart__bar"><span></span></div>
+      </div>
+      <ul class="cart__list" data-cart-list></ul>
+      <footer class="cart__foot">
+        <p class="cart__total"><span>Total</span><strong data-cart-total>0,00 €</strong></p>
+        <a class="btn btn--primary btn--block btn--lg" data-cart-checkout target="_blank" rel="noopener">
+          Finalizar no WhatsApp
+        </a>
+        <p class="cart__note">Confirmamos a disponibilidade e o pagamento na conversa. Sem compromisso.</p>
+      </footer>
+    </aside>
+  </div>
+
+  <!-- ===== Vista rápida de produto ===== -->
+  <dialog class="quickview" data-quickview-dialog aria-labelledby="quickview-title">
+    <button type="button" class="icon-btn quickview__close" data-quickview-close aria-label="Fechar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="quickview__body" data-quickview-body></div>
+  </dialog>
+</body>
+</html>

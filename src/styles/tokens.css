@@ -1,0 +1,71 @@
+/* =========================================================
+   Design tokens — Novitá
+   Fonte única de verdade para cor, tipografia, espaço e movimento.
+   Ver docs/BRAND.md para o racional de cada escolha.
+   ========================================================= */
+:root {
+  /* Cor — paleta "linho & terracota" */
+  --c-ivory: #f6f1ea;      /* fundo principal */
+  --c-sand: #ece3d6;       /* fundo alternado */
+  --c-linen: #ddd0bd;      /* linhas, bordas */
+  --c-ink: #221e1b;        /* texto, botões primários */
+  --c-ink-soft: #5c544d;   /* texto secundário */
+  --c-terracotta: #b8603f; /* acento da marca */
+  --c-terracotta-dk: #9a4c2f;
+  --c-olive: #6f7052;
+  --c-white: #fffdf9;
+
+  --bg: var(--c-ivory);
+  --bg-alt: var(--c-sand);
+  --fg: var(--c-ink);
+  --fg-muted: var(--c-ink-soft);
+  --line: var(--c-linen);
+  --accent: var(--c-terracotta);
+
+  /* Tipografia */
+  --font-display: 'Fraunces', 'Times New Roman', serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --fs-xl: clamp(1.75rem, 1.3rem + 1.8vw, 2.75rem);
+  --fs-2xl: clamp(2.25rem, 1.4rem + 3.6vw, 4.25rem);
+  --fs-hero: clamp(2.75rem, 1.4rem + 6vw, 6.5rem);
+
+  /* Espaço (escala de 4px) */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-section: clamp(4rem, 3rem + 5vw, 8rem);
+
+  --container: 1240px;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+
+  /* Forma & profundidade */
+  --r-sm: 6px;
+  --r-md: 14px;
+  --r-lg: 28px;
+  --r-pill: 999px;
+  --shadow-sm: 0 1px 2px rgb(34 30 27 / 0.06);
+  --shadow-md: 0 12px 32px -12px rgb(34 30 27 / 0.22);
+  --shadow-lg: 0 30px 80px -20px rgb(34 30 27 / 0.35);
+
+  /* Movimento */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 160ms;
+  --t-base: 320ms;
+  --t-slow: 700ms;
+
+  --header-h: 72px;
+  --z-header: 50;
+  --z-float: 60;
+  --z-overlay: 100;
+}

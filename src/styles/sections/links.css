@@ -1,0 +1,51 @@
+/* Página "link na bio" (links.html) */
+.links-page {
+  min-height: 100dvh;
+  background:
+    radial-gradient(60% 50% at 50% 0%, rgb(184 96 63 / 0.35), transparent 70%),
+    var(--fg);
+  color: var(--c-white);
+}
+.links {
+  width: min(480px, 100%);
+  margin-inline: auto;
+  padding: var(--s-8) var(--s-4) var(--s-6);
+}
+.links__head { text-align: center; margin-bottom: var(--s-7); }
+.links__avatar {
+  display: grid;
+  place-items: center;
+  width: 96px; height: 96px;
+  margin: 0 auto var(--s-4);
+  border-radius: 50%;
+  background: linear-gradient(160deg, #c98a6a, var(--c-terracotta-dk));
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 3.2rem;
+  font-weight: 300;
+  box-shadow: 0 0 0 6px rgb(255 253 249 / 0.08);
+}
+.links__head .logo { font-size: 2.6rem; margin-bottom: var(--s-2); }
+.links__head p { color: rgb(255 253 249 / 0.7); }
+
+.links__list { display: grid; gap: var(--s-3); }
+.links__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--s-4) var(--s-5);
+  border: 1px solid rgb(255 253 249 / 0.18);
+  border-radius: var(--r-pill);
+  font-weight: 600;
+  transition: background var(--t-fast), color var(--t-fast), transform var(--t-fast);
+}
+.links__item:hover { background: var(--c-white); color: var(--fg); transform: translateY(-2px); }
+.links__item--primary { background: var(--c-terracotta); border-color: var(--c-terracotta); }
+
+.links__foot {
+  margin-top: var(--s-8);
+  text-align: center;
+  font-size: var(--fs-xs);
+  color: rgb(255 253 249 / 0.5);
+}
+.links__foot p { margin-bottom: var(--s-1); }
