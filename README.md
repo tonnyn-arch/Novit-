@@ -45,4 +45,11 @@ Os valores provisórios a confirmar estão listados em [`docs/BRAND.md`](docs/BR
 
 ## Publicar
 
-É um site estático: basta publicar a pasta raiz no GitHub Pages, Netlify ou Vercel.
+É um site estático, sem build. Está configurado para a **Vercel** (`vercel.json`):
+
+1. Em [vercel.com/new](https://vercel.com/new), importar o repositório `tonnyn-arch/Novit-`.
+2. Framework Preset: **Other**. Não é preciso mudar mais nada, porque o `vercel.json` já define tudo.
+3. Clicar em **Deploy**. A partir daí, cada push publica automaticamente.
+
+O `vercel.json` publica a raiz do projeto, não só a pasta `public/` como a Vercel faria por defeito. Também ativa URLs limpos (`/links`) e cabeçalhos de segurança.
+O `.vercelignore` exclui do site os testes e a documentação.

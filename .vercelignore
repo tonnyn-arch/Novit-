@@ -1,0 +1,8 @@
+# Ficheiros que não precisam de ser publicados no site
+tests/
+docs/
+CONTRIBUTING.md
+README.md
+package.json
+.editorconfig
+.prettierrc
